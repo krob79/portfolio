@@ -34,23 +34,15 @@
     "text": "I am a Visual Designer with a strong focus on digital branding. Visul design seeks to attract, inspire, create desires and otivate people to respond to messages, with a view to making a favorable impact.",
     "details": [
       {
-        "title": "Birthday",
-        "info": "May 07, 1990"
-      },
-      {
         "title": "Email",
         "info": "emailkyleroberts@gmail.com"
       },
       {
-        "title": "From",
-        "info": "2661 Hich meadow lane bear creek"
-      },
-      {
         "title": "Language",
-        "info": "English, Germanic"
+        "info": "English"
       },
       {
-        "title": "Freelance",
+        "title": "Full-time work",
         "info": "Available"
       },
       {
@@ -567,16 +559,16 @@
   ],
   "socialData2": [
     {
-      "icon": "facebook-f",
-      "link": "/facebook"
+      "icon": "twitter",
+      "link": "https://x.com/kyle_roberts"
     },
     {
-      "icon": "twitter",
-      "link": "/twitter"
+      "icon": "linkedin",
+      "link": "https://www.linkedin.com/in/kyleroberts/"
     },
     {
       "icon": "github",
-      "link": "/github"
+      "link": "https://github.com/krob79/"
     }
   ]
 }
