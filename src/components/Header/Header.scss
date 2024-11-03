@@ -1,5 +1,21 @@
 @import "../../sass/default/variable.scss";
 
+
+.krSVG{
+  font-variation-settings: normal;
+  display: inline;
+  fill: none;
+  fill-opacity: 1;
+  stroke: #ff0000;
+  stroke-width: 2.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 4;
+  stroke-dasharray: none;
+  stroke-dashoffset: 0;
+  stroke-opacity: 1;
+}
+
 .st-site-header.st-style1 {
   transition: all 0.4s ease;
 
