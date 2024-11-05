@@ -6,7 +6,7 @@ import Resume from '../components/Resume/ResumeSection';
 import BlogSection from '../components/Blog/BlogSection';
 import ReviewSection from '../components/Review/ReviewSection';
 import Contact from "../components/Contact/Contact";
-import PortfolioSection from '../components/Protfolio/PortfolioSection';
+import PortfolioSection from '../components/Portfolio/PortfolioSection';
 import Hero from '../components/Hero/Hero';
 
 const Home = () => {

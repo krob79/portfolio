@@ -3,10 +3,52 @@ import { Link } from 'react-router-dom';
 import './Contact.scss';
 import SectionHeading from '../SectionHeading/SectionHeading';
 import { Icon } from '@iconify/react';
+import { useState } from 'react';
 import SocialLinks from '../SocialLinks/SocialLinks';
+import emailjs from '@emailjs/browser';
+import axios from 'axios';
 
 const Contact = ({ data, socialData }) => {
   const { title, text, subTitle } = data;
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log("----handlesubmit!!");
+    const serviceId = 'service_0x8v42a';
+    const templateId = 'template_eh5o80l';
+    const publicKey = '7ua9E6hU3yYdqCI4x';
+
+    const data = {
+      service_id: serviceId,
+      template_id: templateId,
+      user_id: publicKey,
+      template_params: {
+        from_name: name,
+        from_email: email,
+        from_subject: subject,
+        to_name: 'Kyle darling....',
+        message: message,
+      }
+    };
+
+    try {
+      const res = await axios.post("https://api.emailjs.com/api/v1.0/email/send", data);
+      console.log(res.data);
+      setName('');
+      setEmail('');
+      setSubject('');
+      setMessage('');
+    } catch (error) {
+      console.error(error);
+    }
+  }
+  
+
   return (
     <section id="contact" className="st-dark-bg">
       <div className="st-height-b100 st-height-lg-b80"></div>
@@ -16,18 +58,18 @@ const Contact = ({ data, socialData }) => {
           <div className="col-lg-6">
             <h3 className="st-contact-title">Just say Hello</h3>
             <div id="st-alert"></div>
-            <form action="#" method="POST" className="st-contact-form" id="contact-form">
+            <form method="POST" className="st-contact-form" id="contact-form" onSubmit={handleSubmit}>
               <div className="st-form-field">
-                <input type="text" id="name" name="name" placeholder="Your Name" required />
+                <input type="text" id="name" name="name" placeholder="Your Name" onChange={(e)=> setName(e.target.value)} required />
               </div>
               <div className="st-form-field">
-                <input type="text" id="email" name="email" placeholder="Your Email" required />
+                <input type="text" id="email" name="email" placeholder="Your Email" onChange={(e)=> setEmail(e.target.value)} required />
               </div>
               <div className="st-form-field">
-                <input type="text" id="subject" name="subject" placeholder="Your Subject" required />
+                <input type="text" id="subject" name="subject" placeholder="Your Subject" onChange={(e)=> setSubject(e.target.value)} required />
               </div>
               <div className="st-form-field">
-                <textarea cols="30" rows="10" id="msg" name="msg" placeholder="Your Message" required></textarea>
+                <textarea cols="30" rows="10" id="msg" name="msg" placeholder="Your Message" onChange={(e)=> setMessage(e.target.value)} required></textarea>
               </div>
               <button className='st-btn st-style1 st-color1' type="submit" id="submit" name="submit">Send Message</button>
             </form>

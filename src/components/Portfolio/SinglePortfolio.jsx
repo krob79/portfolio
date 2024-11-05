@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { Icon } from '@iconify/react';
 
+
 const SinglePortfolio = ({ data, getData }) => {
   const { imgLink, imgLinkLg, title, subTitle, effect, duration, delay } = data;
 
