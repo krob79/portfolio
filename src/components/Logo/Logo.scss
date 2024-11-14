@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "myFont";
+    src: url("./Alanden_.ttf");
+  }
+
+body {
+    width:100%;
+    height: 100%;
+    background: black;
+}
+
+#logotext{
+    color: white;
+    font-family: "myFont", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.kshape{
+    color: #fff;
+    text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff, 0 0 200px #0072ff;
+    /* fill: none; */
+    stroke: #b5b5b6;
+    filter: url(#red-glow);
+    stroke-miterlimit: 1;
+}
+.rshape{
+    fill: white;
+    filter: url(#red-glow);
+}
+
+.wrapper{
+    margin-top: 25%;
+}
+
+.center {
+    position: absolute;
+    margin-top:-20px;
+    margin-left: -7px;
+    width: 49px;
+    /* border: 3px solid green; */
+    padding: 10px;
+  }
+
+#tracelogo {
+    position: absolute;
+    width: 90%;
+}
+
+#glowlogo {
+    opacity: 0;
+    font-size: 100px;
+    color: #fff;
+    animation: appear 0.5s linear, animate 10s linear infinite;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+.logo_path {
+    stroke-dasharray: 1900;
+    stroke-dashoffset: 1900;
+    animation: trace 3s forwards;
+}
+
+@keyframes animate {
+    from {
+        filter:hue-rotate(0deg);
+    }
+    to{
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes trace {
+    0% {
+        opacity: 1;
+        stroke-dashoffset: 1900;
+    }
+    90% {
+        opacity: 1;
+    }
+    
+    100% {
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

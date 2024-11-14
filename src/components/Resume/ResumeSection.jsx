@@ -4,7 +4,7 @@ import "./Resume.scss";
 import SingleResume from './SingleResume';
 
 const ResumeSection = ({ data }) => {
-  const { educationTitle, education, experienceTitle, experience } = data;
+  const { educationTitle, education, experienceTitle, experience, cvPdf } = data;
   return (
     <section id="resume" className="st-dark-bg">
       <div className="st-height-b100 st-height-lg-b80"></div>
@@ -27,6 +27,7 @@ const ResumeSection = ({ data }) => {
                     <SingleResume element={education} key={index} />
                   ))
                 }
+                <a className='st-btn st-style1 st-color1' href={cvPdf} download>Download CV</a>
               </div>
             </div>
             <div className="st-height-b100 st-height-lg-b80"></div>

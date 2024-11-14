@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import './Header.scss';
 import { Link as ScrollLink } from 'react-scroll';
 import { useEffect, useState } from 'react';
+import Logo from '../Logo/Logo';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,6 +36,7 @@ const Header = () => {
         <div className="container">
           <div className="st-main-header-in">
             <div className="st-main-header-left">
+              <Logo/>
               <Link className="st-site-branding" to='/' id="hero"><img src="/images/logo.png" alt="Davis" /></Link>
             </div>
             <div className="st-main-header-right">

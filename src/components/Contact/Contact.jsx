@@ -5,16 +5,28 @@ import SectionHeading from '../SectionHeading/SectionHeading';
 import { Icon } from '@iconify/react';
 import { useState } from 'react';
 import SocialLinks from '../SocialLinks/SocialLinks';
-import emailjs from '@emailjs/browser';
 import axios from 'axios';
 
 const Contact = ({ data, socialData }) => {
   const { title, text, subTitle } = data;
 
   const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
+  const [formEmail, setFormEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
+  const [btnDisplay, setBtnDisplay] = useState('Send Message');
+
+  //this doesn't work yet - throws error when used
+  const validateEmail = (emailVal) => {
+    let email = emailVal;
+    let emailRegEx = /^[a-zA-Z0-9.!#$%&’*+\=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)+$/;
+    console.log("EMAIL MATCH: " + (email.match(emailRegEx) != null));   
+    if(!email.match(emailRegEx)){
+        return false;
+    }else{
+        return true;
+    }
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -29,22 +41,27 @@ const Contact = ({ data, socialData }) => {
       user_id: publicKey,
       template_params: {
         from_name: name,
-        from_email: email,
+        from_email: formEmail,
         from_subject: subject,
         to_name: 'Kyle darling....',
         message: message,
       }
     };
-
-    try {
-      const res = await axios.post("https://api.emailjs.com/api/v1.0/email/send", data);
-      console.log(res.data);
-      setName('');
-      setEmail('');
-      setSubject('');
-      setMessage('');
-    } catch (error) {
-      console.error(error);
+    if(email){
+      try {
+        setBtnDisplay('Sending...');
+        const res = await axios.post("https://api.emailjs.com/api/v1.0/email/send", data);
+        console.log(res.data);
+        setName('');
+        setFormEmail('');
+        setSubject('');
+        setMessage('');
+        setBtnDisplay('Message Sent!');
+      } catch (error) {
+        console.error(error);
+      }
+    }else{
+      console.log("----NOT SENDING - NO EMAIL LISTED");
     }
   }
   
@@ -60,18 +77,18 @@ const Contact = ({ data, socialData }) => {
             <div id="st-alert"></div>
             <form method="POST" className="st-contact-form" id="contact-form" onSubmit={handleSubmit}>
               <div className="st-form-field">
-                <input type="text" id="name" name="name" placeholder="Your Name" onChange={(e)=> setName(e.target.value)} required />
+                <input type="text" id="name" name="name" placeholder="Your Name" onChange={(e)=> setName(e.target.value)} value={name || ""} required />
               </div>
               <div className="st-form-field">
-                <input type="text" id="email" name="email" placeholder="Your Email" onChange={(e)=> setEmail(e.target.value)} required />
+                <input type="text" id="email" name="email" placeholder="Your Email" onChange={(e)=> setFormEmail(e.target.value)} value={formEmail || ""} required />
               </div>
               <div className="st-form-field">
-                <input type="text" id="subject" name="subject" placeholder="Your Subject" onChange={(e)=> setSubject(e.target.value)} required />
+                <input type="text" id="subject" name="subject" placeholder="Your Subject" onChange={(e)=> setSubject(e.target.value)} value={subject || ""} required />
               </div>
               <div className="st-form-field">
-                <textarea cols="30" rows="10" id="msg" name="msg" placeholder="Your Message" onChange={(e)=> setMessage(e.target.value)} required></textarea>
+                <textarea cols="30" rows="10" id="msg" name="msg" placeholder="Your Message" onChange={(e)=> setMessage(e.target.value)} value={message || ""} required></textarea>
               </div>
-              <button className='st-btn st-style1 st-color1' type="submit" id="submit" name="submit">Send Message</button>
+              <button className='st-btn st-style1 st-color1' type="submit" id="submit" name="submit">{btnDisplay || ""}</button>
             </form>
             <div className="st-height-b0 st-height-lg-b30"></div>
           </div>

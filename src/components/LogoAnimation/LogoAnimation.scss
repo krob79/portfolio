@@ -1,0 +1,136 @@
+
+#logotext{
+    color: white;
+    font-family: "myFont", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.animation_kshape{
+    color: #fff;
+    text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff, 0 0 200px #0072ff;
+    /* fill: none; */
+    stroke-width: 1%;
+    stroke: #b5b5b6;
+    filter: url(#red-glow);
+    stroke-miterlimit: 1;
+}
+.animation_rshape{
+    fill: white;
+    filter: url(#red-glow);
+}
+
+.wrapper{
+    margin-top: 25%;
+}
+
+.animation_center {
+    position: absolute;
+    z-index: 100;
+    width:22%;
+    margin-top: 10%;
+    margin-left: 43%;
+    /* border: 3px solid green; */
+  }
+
+#animation_tracelogo {
+    position: absolute;
+    width: auto;
+}
+
+#animation_glowlogo {
+    position: absolute;
+    width: auto;
+    opacity: 0;
+    font-size: 100px;
+    color: #fff;
+    animation: appear 0.5s linear, animate 10s linear infinite, disappear 1s;
+    animation-delay: 2.5s, 0.5s, 4.5s;
+    animation-fill-mode: forwards;
+}
+.animation_logo_path_style{
+    fill:none;
+    stroke:#b5b5b6;
+    stroke-miterlimit:10;
+    stroke-width:1px
+}
+
+.animation_logo_path {
+    stroke-dasharray: 1900;
+    stroke-dashoffset: 1900;
+    animation: trace 3s forwards, disappear 0.5s forwards;
+    animation-delay: 0s, 3s;
+}
+
+@keyframes animate {
+    from {
+        filter:hue-rotate(0deg);
+    }
+    to{
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes trace {
+    0% {
+        opacity: 1;
+        stroke-dashoffset: 1900;
+    }
+    90% {
+        opacity: 1;
+    }
+    
+    100% {
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes disappear {
+    0% {
+        stroke-opacity: 1;
+        opacity: 1;
+    }
+    100% {
+        stroke-opacity: 0;
+        opacity: 0;
+    }
+}
+
+
+@media screen and (min-width: 375px) {
+    .animation_center{
+        margin-top: 40%;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .animation_center{
+        margin-top: 20%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .animation_center {
+        margin-top: 15%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .animation_center {
+        margin-top: 15%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .animation_center {
+        margin-top: 5%;
+    }
+}
