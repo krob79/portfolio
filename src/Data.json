@@ -28,7 +28,7 @@
   },
   "aboutData": {
     "imgLink": "/images/section/about.jpg",
-    "cvPdf": "/images/Resume.pdf",
+    "cvPdf": "/images/kyle-roberts-resume2024.pdf",
     "title": "Hi There! I'm Kyle Roberts",
     "subtitle": "Web Developer",
     "text": "Creating interactive experiences is something I've always been passionate about. Looking to work on exciting creative projects that can utilize both my programming and communication experience! I'm an interactive designer, developer and multi-tasker with 10+ years experience developing professional content using video, animation, programming and design. 10+ years experience working with clients through trainings, presentations, and technical support.",
@@ -108,14 +108,14 @@
     "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.",
     "skills": [
       {
-        "title": "Photoshop",
+        "title": "JavaScript",
         "progress": "95%",
         "effect": "fade-up",
         "duration": "500",
         "delay": "200"
       },
       {
-        "title": "Motion Graphic",
+        "title": "CSS",
         "progress": "75%",
         "effect": "fade-up",
         "duration": "500",
@@ -154,19 +154,21 @@
   "portfolioData": {
     "portfolioItems": [
       {
-        "imgLink": "./images/portfolio/portfolio1.jpg",
-        "imgLinkLg": "./images/portfolio/portfolio1_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
+        "imgLink": "./images/portfolio/p6_thumb.png",
+        "imgLinkLg": "./images/portfolio/p6_thumb.mp4",
+        "imgLinkLgPoster": "./images/portfolio/p6_poster.png",
+        "title": "TreeHouse Portfolio",
+        "subTitle": "Full Stack Development",
         "effect": "fade-up",
         "duration": "500",
         "delay": "200"
       },
       {
-        "imgLink": "./images/portfolio/portfolio2.jpg",
-        "imgLinkLg": "./images/portfolio/portfolio2_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
+        "imgLink": "./images/portfolio/p10_thumb.png",
+        "imgLinkLg": "./images/portfolio/p10_thumb.mp4",
+        "imgLinkLgPoster": "./images/portfolio/p10_poster.png",
+        "title": "Full Stack Course Catalog",
+        "subTitle": "Full Stack Development",
         "effect": "fade-up",
         "duration": "500",
         "delay": "300"
@@ -174,191 +176,12 @@
       {
         "imgLink": "./images/portfolio/portfolio3.jpg",
         "imgLinkLg": "./images/portfolio/portfolio3_lg.jpg",
+        "imgLinkLgPoster": "",
         "title": "Product Design",
         "subTitle": "Design / Marketing",
         "effect": "fade-up",
         "duration": "500",
         "delay": "400"
-      },
-      {
-        "imgLink": "./images/portfolio/portfolio4.jpg",
-        "imgLinkLg": "./images/portfolio/portfolio4_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
-        "effect": "fade-up",
-        "duration": "500",
-        "delay": "500"
-      },
-      {
-        "imgLink": "./images/portfolio/portfolio5.jpg",
-        "imgLinkLg": "./images/portfolio/portfolio5_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
-        "effect": "fade-up",
-        "duration": "500",
-        "delay": "600"
-      },
-      {
-        "imgLink": "./images/portfolio/portfolio6.jpg",
-        "imgLinkLg": "./images/portfolio/portfolio6_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
-        "effect": "fade-up",
-        "duration": "500",
-        "delay": "700"
-      },
-      {
-        "imgLink": "./images/portfolio/portfolio1.jpg",
-        "imgLinkLg": "./images/portfolio/portfolio1_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
-        "effect": "fade-up",
-        "duration": "500",
-        "delay": "200"
-      },
-      {
-        "imgLink": "./images/portfolio/portfolio2.jpg",
-        "imgLinkLg": "./images/portfolio/portfolio2_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
-        "effect": "fade-up",
-        "duration": "500",
-        "delay": "300"
-      },
-      {
-        "imgLink": "./images/portfolio/portfolio3.jpg",
-        "imgLinkLg": "./images/portfolio/portfolio3_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
-        "effect": "fade-up",
-        "duration": "500",
-        "delay": "400"
-      },
-      {
-        "imgLink": "./images/portfolio/portfolio4.jpg",
-        "imgLinkLg": "./images/portfolio/portfolio4_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
-        "effect": "fade-up",
-        "duration": "500",
-        "delay": "500"
-      },
-      {
-        "imgLink": "./images/portfolio/portfolio5.jpg",
-        "imgLinkLg": "./images/portfolio/portfolio5_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
-        "effect": "fade-up",
-        "duration": "500",
-        "delay": "600"
-      },
-      {
-        "imgLink": "./images/portfolio/portfolio6.jpg",
-        "imgLinkLg": "./images/portfolio/portfolio6_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
-        "effect": "fade-up",
-        "duration": "500",
-        "delay": "700"
-      },
-      {
-        "imgLink": "./images/portfolio/portfolio1.jpg",
-        "imgLinkLg": "./images/portfolio/portfolio1_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
-        "effect": "fade-up",
-        "duration": "500",
-        "delay": "200"
-      },
-      {
-        "imgLink": "./images/portfolio/portfolio2.jpg",
-        "imgLinkLg": "./images/portfolio/portfolio2_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
-        "effect": "fade-up",
-        "duration": "500",
-        "delay": "300"
-      },
-      {
-        "imgLink": "./images/portfolio/portfolio3.jpg",
-        "imgLinkLg": "./images/portfolio/portfolio3_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
-        "effect": "fade-up",
-        "duration": "500",
-        "delay": "400"
-      },
-      {
-        "imgLink": "./images/portfolio/portfolio4.jpg",
-        "imgLinkLg": "./images/portfolio/portfolio4_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
-        "effect": "fade-up",
-        "duration": "500",
-        "delay": "500"
-      },
-      {
-        "imgLink": "./images/portfolio/portfolio5.jpg",
-        "imgLinkLg": "./images/portfolio/portfolio5_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
-        "effect": "fade-up",
-        "duration": "500",
-        "delay": "600"
-      },
-      {
-        "imgLink": "./images/portfolio/portfolio6.jpg",
-        "imgLinkLg": "./images/portfolio/portfolio6_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
-        "effect": "fade-up",
-        "duration": "500",
-        "delay": "700"
-      },
-      {
-        "imgLink": "./images/portfolio/portfolio1.jpg",
-        "imgLinkLg": "./images/portfolio/portfolio1_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
-        "effect": "fade-up",
-        "duration": "500",
-        "delay": "200"
-      },
-      {
-        "imgLink": "./images/portfolio/portfolio2.jpg",
-        "imgLinkLg": "./images/portfolio/portfolio2_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
-        "effect": "fade-up",
-        "duration": "500",
-        "delay": "300"
-      },
-      {
-        "imgLink": "./images/portfolio/portfolio3.jpg",
-        "imgLinkLg": "./images/portfolio/portfolio3_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
-        "effect": "fade-up",
-        "duration": "500",
-        "delay": "400"
-      },
-      {
-        "imgLink": "./images/portfolio/portfolio4.jpg",
-        "imgLinkLg": "./images/portfolio/portfolio4_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
-        "effect": "fade-up",
-        "duration": "500",
-        "delay": "500"
-      },
-      {
-        "imgLink": "./images/portfolio/portfolio5.jpg",
-        "imgLinkLg": "./images/portfolio/portfolio5_lg.jpg",
-        "title": "Product Design",
-        "subTitle": "Design / Marketing",
-        "effect": "fade-up",
-        "duration": "500",
-        "delay": "600"
       }
     ]
   },
@@ -437,7 +260,7 @@
     "sliderSetting": {
       "infinite": true,
       "speed": 500,
-      "slidesToShow": 3,
+      "slidesToShow": 6,
       "slidesToScroll": 1,
       "arrows": false,
       "responsive": [
@@ -459,45 +282,52 @@
     },
     "informations": [
       {
-        "imgLink": "./images/client/client1.png",
-        "title": "Richard Miles",
-        "designation": "Chairman",
-        "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam accusamus autem itaque blanditiis enim debitis totam facilis reiciendis voluptate aspernatur!"
+        "imgLink": "./images/client/sharon.jpg",
+        "title": "Sharon Turner",
+        "designation": "Manager, DLH",
+        "shortText": "...an integral part of our team...I sincerely hope to work with him again!",
+        "text": "Kyle just completed a year-long intranet migration project for our CDC customer with an eye for innovation and accessibility. This was content that in many cases hadn't been reviewed in over a decade. Kyle never complained. He would ask questions and then come back with a solution that would delight the team and content owner. 2020 will be remembered as a tough time for everyone but we were honored to have Kyle be an integral (and positive) part of our team while the project was underway. I sincerely hope to work with him again!"
       },
       {
-        "imgLink": "./images/client/client2.png",
-        "title": "Vesta Shufelt",
-        "designation": "Executive Director",
-        "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam accusamus autem itaque blanditiis enim debitis totam facilis reiciendis voluptate aspernatur!"
+        "imgLink": "./images/client/sarah.jpg",
+        "title": "Sarah Neale AuGustin",
+        "designation": "Coworker, DLH",
+        "shortText": "...was able to jump right in and was a huge asset to our team...",
+        "text": "Kyle is an excellent developer. He is professional, knowledgeable, and creative. We worked together on a project and Kyle was able to jump right in and was a huge asset to our team. He was not afraid to suggest creative solutions which the client loved! I would work with Kyle again in a heartbeat."
       },
       {
-        "imgLink": "./images/client/client3.png",
-        "title": "Joseph Alves",
-        "designation": "Managing Director",
-        "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam accusamus autem itaque blanditiis enim debitis totam facilis reiciendis voluptate aspernatur!"
+        "imgLink": "./images/client/chip.jpg",
+        "title": "Chip Morrison",
+        "designation": "Coworker, Northrop Grumman",
+        "shortText": "...a great web developer and team player...an all-round professional...",
+        "text": "Kyle is a great web developer and team player. He is never too busy to help a colleague with a question. Kyle is an all-round professional with a great can-do attitude. I would have no hesitation in recommending Kyle for a position on any web team."
       },
       {
-        "imgLink": "./images/client/client1.png",
-        "title": "Richard Miles",
-        "designation": "Chairman",
-        "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam accusamus autem itaque blanditiis enim debitis totam facilis reiciendis voluptate aspernatur!"
+        "imgLink": "./images/client/barbara.jpg",
+        "title": "Barbara Maniero",
+        "designation": "Coworker, EyeWonder",
+        "shortText": "...always open to grow...by keeping up with new technologies...",
+        "text": "Kyle is a hard worker and dedicated developer. We took classes at college where he greatly helped understand and learn Flash/Actionscript, and then our path crossed again at Eyewonder. At EyeWonder we worked both as peers and then I as Team Lead. During his time at Eyewonder, Kyle spent his time both developing complex ads as well as providing support and guidance to our client using our API. Kyle is a great team player and always ready to help teammates and co-workers in general. He is knowledgeable and skilled yet always open to grow personally and professionally by keeping up with new technologies and trends. Kyle is a committed employee and a great asset for any company."
       },
       {
-        "imgLink": "./images/client/client2.png",
-        "title": "Vesta Shufelt",
-        "designation": "Executive Director",
-        "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam accusamus autem itaque blanditiis enim debitis totam facilis reiciendis voluptate aspernatur!"
+        "imgLink": "./images/client/meng.jpg",
+        "title": "Xiao Meng Zhu",
+        "designation": "Manager, EyeWonder",
+        "shortText": "His solid design background...with increased development...a key asset...",
+        "text": "Kyle has been a great member of the creative team and has been instrumental in refining our customer facing training materials and received many accolades from peers and clients alike. His solid design background coupled with increased development focus has made him an all-rounder and key asset for high end campaigns. I look forward to working with him again in the future."
       },
       {
-        "imgLink": "./images/client/client3.png",
-        "title": "Joseph Alves",
-        "designation": "Managing Director",
-        "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam accusamus autem itaque blanditiis enim debitis totam facilis reiciendis voluptate aspernatur!"
+        "imgLink": "./images/client/brian.jpg",
+        "title": "Brian Rodriguez",
+        "designation": "Coworker, EyeWonder",
+        "shortText": "...was one of the best trainers and mentors I've had the pleasure of working with...",
+        "text": "I worked with Kyle for over 7 years at EyeWonder; a company that, through acquisitions and mergers, eventually became what it is today - Sizmek. As a peer creative developer Kyle truly embodied the dual nature of that role showing an amazing skill at design and animation on the creative side, and in his ability to incorporate complex code in his projects which ranged from simple ad builds to more complex ad campaigns requiring use of Video, data loading, sound manipulation and a wide range of other skills. He's proficient on both sides of the Flash/HTML5 argument, and is excellent not only at doing, but also demonstrating this as he was one of the best trainers and mentors I've had the pleasure of working with and watching. Kyle always makes great efforts to be on the front edge of emerging technologies and concepts, ready to learn, use and share them with those around him. Beyond the daily grind, Kyle was a true pleasure to work with, being both personable, friendly, helpful, and with a healthy dose of humor and wit, could keep the tone of the office more bearable even in the most stressful of times. To any who are interested - he would be an absolute asset from the moment he's hired."
       }
     ]
   },
   "resumeData": {
     "experienceTitle": "Experience",
+    "cvPdf": "/images/kyle-roberts-resume2024.pdf",
     "experience": [
       {
         "title": "Web Developer",
@@ -516,6 +346,24 @@
         "duration": "Aug 2016 - Jan 2020",
         "subTitle": "Northrop Grumman Corporation",
         "text": "Developed and managed web content for 20+ sites within CDC.gov, using WordPress CMS, HTML, CSS and Javascript. Collaborated with UI / UX team to ensure content was properly organized and accessible. Created metrics reports on 400+ pages and presented websites’ annual performance, guiding division’s team to improve web traffic. Disseminated urgent news about outbreaks and important clinician webinars through design, distribution and archival of 500+ newsletters. Edited and prepared 30+ clinician webinars for CDC websites, ensuring accessibility for vision-impaired and hearing-impaired users. Designed branding elements for groups within the CDC."
+      },
+      {
+        "title": "Web Developer",
+        "duration": "Dec 2015 - Aug 2016",
+        "subTitle": "Teksystems",
+        "text": "Developed and managed web content for 20+ sites within CDC.gov. Designed branding elements and posters for groups within CDC. dited and prepared 30+ clinician webinars for CDC websites, ensuring accessibility for vision-impaired and hearing-impaired users. Designed branding elements for CDC's Joint Information Center (JIC)."
+      },
+      {
+        "title": "Senior Developer",
+        "duration": "May 2015 - Dec 2015",
+        "subTitle": "BBDO Atlanta",
+        "text": "Developed website for AT&T's 2015 'Strongest of the Strong' campaign using Angular.JS and PhantomJS. Collaborated on rebranding of company website. Developed 100+ HTML5 banners for AT&T, Metro Atlanta Chamber of Commerce and Novant Health using CSS and JavaScript."
+      },
+      {
+        "title": "Creative Solutions Engineer",
+        "duration": "Nov 2005 - May 2015",
+        "subTitle": "Sizmek (formerly EyeWonder/MediaMind)",
+        "text": "Developed website for AT&T's 2015 'Strongest of the Strong' campaign using Angular.JS and PhantomJS. Collaborated on rebranding of company website. Developed 100+ HTML5 banners for AT&T, Metro Atlanta Chamber of Commerce and Novant Health using CSS and JavaScript."
       }
     ],
     "educationTitle": "Education",
@@ -537,13 +385,13 @@
   "contactData": {
     "formTitle": "Just say Hello",
     "title": "Contact Info",
-    "subTitle": "Visite my social profile and get connected",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula nulla tincidunt id faucibus sed suscipit feugiat."
+    "subTitle": "Visit my social profile and get connected",
+    "text": "Send me a message here or email directly at the address below."
   },
   "socialData": [
     {
-      "icon": "twitter",
-      "title": "Twitter",
+      "icon": "square-x-twitter",
+      "title": "X",
       "link": "https://x.com/kyle_roberts"
     },
     {

@@ -1,6 +1,6 @@
 import './Modal.scss';
 
-const Modal = ({ img, title, subTitle, modalClose }) => {
+const Modal = ({ img, imgLinkLgPoster, title, subTitle, modalClose }) => {
   const modalStyle = {
     backgroundColor: 'rgba(0,0,0,0.8)',
     display: 'block',

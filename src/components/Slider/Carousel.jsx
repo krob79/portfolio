@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import SingleBlog from "../Blog/SingleBlog";
 import SingleReview from "../Review/SingleReview";
 
-const Carousel = ({ data }) => {
+const Carousel = ({ data, getData }) => {
   const { useFor, informations, sliderSetting, sliderImages } = data;
 
   if (useFor === "blog") {
@@ -24,7 +24,7 @@ const Carousel = ({ data }) => {
       <Slider  {...sliderSetting}>
         {
           informations.map((element, index) => (
-            <SingleReview element={element} key={index} />
+            <SingleReview element={element} key={index} getData={getData} />
           ))
         }
       </Slider >

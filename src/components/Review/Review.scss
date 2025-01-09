@@ -1,4 +1,14 @@
 @import '../../sass/default/variable';
+
+.st-testimonial-moreLink {
+  line-height: 50px;
+  color: $base-color1;
+}
+
+.st-snippet{
+  margin-top: 20px;
+}
+
 .st-testimonial.st-style1 {
   &:hover {
     .st-testimonial-name {
@@ -48,6 +58,7 @@
       top: 1px;
       left: 1px;
     }
+
   }
 
   .st-testimonial-info {

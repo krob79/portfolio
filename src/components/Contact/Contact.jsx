@@ -103,11 +103,10 @@ const Contact = ({ data, socialData }) => {
                 </div>
                 <div className="st-single-info-details">
                   <h4>Email</h4>
-                  <Link to="#">devis@example.com</Link>
-                  <Link to="#">info@support.com</Link>
+                  <Link to="#">emailkyleroberts@gmail.com</Link>
                 </div>
               </div>
-              <div className="st-single-contact-info">
+              {/* <div className="st-single-contact-info">
                 <div className="st-icon-wrap">
                   <Icon icon="fa-solid:phone-alt" />
                 </div>
@@ -125,7 +124,7 @@ const Contact = ({ data, socialData }) => {
                   <h4>Address</h4>
                   <span>2661 High Meadow Lane Bear Creek, <br />Olancha, KY 93544</span>
                 </div>
-              </div>
+              </div> */}
               <div className="st-social-info">
                 <div className="st-social-text">{subTitle}</div>
                 <SocialLinks data={socialData} />

@@ -1,2 +1,2 @@
 # portfolio
-Building a portfolio from a React Template
+Building a personal portfolio from a React Template

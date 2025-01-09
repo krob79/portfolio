@@ -3,15 +3,15 @@ import './Portfolio.scss';
 import SectionHeading from '../SectionHeading/SectionHeading';
 import { useState } from 'react';
 import SinglePortfolio from './SinglePortfolio';
-import Modal from '../Modal/Modal';
+import ModalV from '../Modal/ModalV';
 
 const PortfolioSection = ({ data }) => {
   // Modal
   const [modal, setModal] = useState(false);
   const [tempData, setTempData] = useState([]);
 
-  const getData = (imgLink, title, subTitle) => {
-    let tempData = [imgLink, title, subTitle];
+  const getData = (imgLink, imgLinkLgPoster, title, subTitle) => {
+    let tempData = [imgLink, imgLinkLgPoster, title, subTitle];
     setTempData(item => [1, ...tempData]);
     setModal(true);
   }
@@ -69,7 +69,7 @@ const PortfolioSection = ({ data }) => {
         </div>
         <div className="st-height-b100 st-height-lg-b80"></div>
       </section>
-      {modal === true ? <Modal img={tempData[1]} title={tempData[2]} subTitle={tempData[3]} modalClose={modalClose} /> : ""}
+      {modal === true ? <ModalV vid={tempData[1]} vidPoster={tempData[2]} title={tempData[3]} subTitle={tempData[4]} modalClose={modalClose} /> : ""}
     </>
   );
 };
