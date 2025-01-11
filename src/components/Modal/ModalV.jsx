@@ -15,7 +15,7 @@ const ModalV = ({ vid, vidposter, title, subTitle, modalClose }) => {
       <div className="modal-dialog modal-lg">
         <div className="modal-content">
           <div className="modal-header">
-            <h4 className="modal-title">MODAL V {title}</h4>
+            <h4 className="modal-title">{title}</h4>
             <button
               type="button"
               className="btn-close"

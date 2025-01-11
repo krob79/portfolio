@@ -10,21 +10,20 @@ import PortfolioSection from '../components/Portfolio/PortfolioSection';
 import Hero from '../components/Hero/Hero';
 
 const Home = () => {
-  const { heroData, aboutData, serviceData, skillData, portfolioData, blogData, resumeData, reviewData, contactData, socialData } = data;
+  const { coreData, heroData, aboutData, serviceData, skillData, portfolioData, blogData, resumeData, reviewData, contactData, socialData } = data;
   return (
     <>
       <div className="st-height-b80 st-height-lg-b80"></div>
-      <Hero data={heroData.homeOneHero} socialData={socialData} />
-      <ReviewSection data={reviewData} data-aos="fade-right" />
-      <About data={aboutData} data-aos="fade-right" />
+      <Contact coreData={coreData} data={contactData} socialData={socialData} data-aos="fade-right" />
+      <Hero coreData={coreData} data={heroData.homeOneHero} socialData={socialData} />
+      <About coreData={coreData} data={aboutData} data-aos="fade-right" />
       {/* <Iconbox data={serviceData} data-aos="fade-right" /> */}
       <Skill data={skillData} data-aos="fade-right" />
-      <Resume data={resumeData} />
-      
+      <Resume coreData={coreData} data={resumeData} />
+      <ReviewSection data={reviewData} data-aos="fade-right" />
       <PortfolioSection data={portfolioData} data-aos="fade-right" />
-      
       {/* <BlogSection data={blogData} data-aos="fade-right" /> */}
-      <Contact data={contactData} socialData={socialData} data-aos="fade-right" />
+      
     </>
   )
 }

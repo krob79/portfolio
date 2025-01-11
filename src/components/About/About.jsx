@@ -2,7 +2,8 @@ import PropTypes from 'prop-types';
 import './About.scss';
 import SectionHeading from '../SectionHeading/SectionHeading';
 
-const About = ({ data }) => {
+const About = ({ coreData, data }) => {
+  const {firstName, lastName, jobtitle, email, resume} = coreData;
   const { imgLink, title, subtitle, text, details, cvPdf } = data;
   return (
     <section id="about" className="st-about-wrap">
@@ -21,7 +22,7 @@ const About = ({ data }) => {
               <div className="st-vertical-middle-in">
                 <div className={`st-text-block st-style1`} data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
                   <h2 className="st-text-block-title">{title}</h2>
-                  <h4 className="st-text-block-subtitle">{subtitle}</h4>
+                  <h4 className="st-text-block-subtitle">{jobtitle}</h4>
                   <div className="st-text-block-text">
                     <p>{text}</p>
                   </div>
@@ -33,7 +34,7 @@ const About = ({ data }) => {
                     ))}
                   </ul>
                   <div className="st-text-block-btn">
-                    <a className='st-btn st-style1 st-color1' href={cvPdf} download>Download CV</a>
+                    <a className='st-btn st-style1 st-color1' href={resume} download>Download CV</a>
                   </div>
                 </div>
               </div>

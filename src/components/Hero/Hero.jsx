@@ -6,7 +6,8 @@ import { Link as ScrollLink } from 'react-scroll';
 import { useEffect } from 'react';
 import WaterWave from 'react-water-wave';
 
-const Hero = ({ data, socialData }) => {
+const Hero = ({ coreData, data, socialData }) => {
+  const { firstName, lastName, jobtitle, email} = coreData;
   const { subTitle, designation, imgLink, title, bgImgLink } = data;
 
   useEffect(() => {
@@ -36,10 +37,10 @@ const Hero = ({ data, socialData }) => {
               {subTitle}
             </h3>
             <h1 data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-              {parser(title)}
+              {parser(`${firstName}<br/>${lastName}`)}
             </h1>
             <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-              {designation}
+              {jobtitle}
             </h2>
             <div
               className="st-hero-btn"

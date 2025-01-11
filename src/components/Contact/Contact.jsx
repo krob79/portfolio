@@ -1,71 +1,31 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import './Contact.scss';
+import { useState } from 'react';
 import SectionHeading from '../SectionHeading/SectionHeading';
 import { Icon } from '@iconify/react';
-import { useState } from 'react';
-import SocialLinks from '../SocialLinks/SocialLinks';
-import axios from 'axios';
 
-const Contact = ({ data, socialData }) => {
+import SocialLinks from '../SocialLinks/SocialLinks';
+
+
+import FormContainer from './FormContainer';
+import EmailSentAnimation from './EmailSentAnimation';
+
+const Contact = ({ coreData, data, socialData }) => {
+  const {firstName, lastName, jobtitle, email, resume} = coreData;
   const { title, text, subTitle } = data;
 
-  const [name, setName] = useState('');
-  const [formEmail, setFormEmail] = useState('');
-  const [subject, setSubject] = useState('');
-  const [message, setMessage] = useState('');
-  const [btnDisplay, setBtnDisplay] = useState('Send Message');
+  const mailtolink = "mailto:"+email;
 
-  //this doesn't work yet - throws error when used
-  const validateEmail = (emailVal) => {
-    let email = emailVal;
-    let emailRegEx = /^[a-zA-Z0-9.!#$%&’*+\=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)+$/;
-    console.log("EMAIL MATCH: " + (email.match(emailRegEx) != null));   
-    if(!email.match(emailRegEx)){
-        return false;
-    }else{
-        return true;
-    }
+  const [emailSuccess, setEmailSuccess] = useState(false);
+
+  const signalSuccess = ()=>{
+    console.log("----signalling success!!");
+    setEmailSuccess(true);
+    setTimeout(() => {setEmailSuccess(false); console.log("----RESETTING EMAIL");}, 5000);
   }
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    console.log("----handlesubmit!!");
-    const serviceId = 'service_0x8v42a';
-    const templateId = 'template_eh5o80l';
-    const publicKey = '7ua9E6hU3yYdqCI4x';
-
-    const data = {
-      service_id: serviceId,
-      template_id: templateId,
-      user_id: publicKey,
-      template_params: {
-        from_name: name,
-        from_email: formEmail,
-        from_subject: subject,
-        to_name: 'Kyle darling....',
-        message: message,
-      }
-    };
-    if(email){
-      try {
-        setBtnDisplay('Sending...');
-        const res = await axios.post("https://api.emailjs.com/api/v1.0/email/send", data);
-        console.log(res.data);
-        setName('');
-        setFormEmail('');
-        setSubject('');
-        setMessage('');
-        setBtnDisplay('Message Sent!');
-      } catch (error) {
-        console.error(error);
-      }
-    }else{
-      console.log("----NOT SENDING - NO EMAIL LISTED");
-    }
-  }
   
-
   return (
     <section id="contact" className="st-dark-bg">
       <div className="st-height-b100 st-height-lg-b80"></div>
@@ -73,23 +33,11 @@ const Contact = ({ data, socialData }) => {
       <div className="container" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
         <div className="row d-flex">
           <div className="col-lg-6">
-            <h3 className="st-contact-title">Just say Hello</h3>
+            <h3 className="st-contact-title">Give me a shout.</h3>
+            <div className="st-contact-text">Yes, I actually check this email form. No, your data will not be collected.</div>
             <div id="st-alert"></div>
-            <form method="POST" className="st-contact-form" id="contact-form" onSubmit={handleSubmit}>
-              <div className="st-form-field">
-                <input type="text" id="name" name="name" placeholder="Your Name" onChange={(e)=> setName(e.target.value)} value={name || ""} required />
-              </div>
-              <div className="st-form-field">
-                <input type="text" id="email" name="email" placeholder="Your Email" onChange={(e)=> setFormEmail(e.target.value)} value={formEmail || ""} required />
-              </div>
-              <div className="st-form-field">
-                <input type="text" id="subject" name="subject" placeholder="Your Subject" onChange={(e)=> setSubject(e.target.value)} value={subject || ""} required />
-              </div>
-              <div className="st-form-field">
-                <textarea cols="30" rows="10" id="msg" name="msg" placeholder="Your Message" onChange={(e)=> setMessage(e.target.value)} value={message || ""} required></textarea>
-              </div>
-              <button className='st-btn st-style1 st-color1' type="submit" id="submit" name="submit">{btnDisplay || ""}</button>
-            </form>
+            {emailSuccess?<EmailSentAnimation />:<FormContainer signalSuccess={signalSuccess}/>}
+            
             <div className="st-height-b0 st-height-lg-b30"></div>
           </div>
           <div className="col-lg-6">
@@ -103,7 +51,7 @@ const Contact = ({ data, socialData }) => {
                 </div>
                 <div className="st-single-info-details">
                   <h4>Email</h4>
-                  <Link to="#">emailkyleroberts@gmail.com</Link>
+                  <Link to={mailtolink}>{email}</Link>
                 </div>
               </div>
               {/* <div className="st-single-contact-info">

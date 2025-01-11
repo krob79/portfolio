@@ -17,6 +17,20 @@
   margin-bottom: 30px;
 }
 
+.form-field-error{
+
+  background-color: #990000;
+  
+}
+
+.confirm-panel{
+  position:relative;
+  width: 100%;
+  height: 100%;
+  background-color: $dark-color2;
+  transition: all 0.4s ease;
+}
+
 .st-form-field input,
 .st-form-field textarea {
   display: block;

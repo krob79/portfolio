@@ -1,41 +1,30 @@
 {
+  "coreData": {
+    "firstName": "Kyle",
+    "lastName": "Roberts",
+    "jobtitle": "Web Developer",
+    "email": "info@kyleroberts.com",
+    "resume": "/images/kyle-roberts-resume2024.pdf"
+  },
   "heroData": {
     "homeOneHero": {
       "bgImgLink": "/images/background/hero-bg.jpg",
       "imgLink": "/images/section/hero-img.jpg",
       "title": "Kyle <br /> Roberts",
-      "subTitle": "Hello, I’m",
+      "subTitle": "",
       "designation": "Web Developer"
-    },
-    "homeTwoHero": {
-      "imgAuthor": "/images/section/hero-img.jpg",
-      "bgImgLink": "/images/background/hero-bg.jpg",
-      "title": "Hi, I am <span>Jhon Doe</span>",
-      "text": "I am a frontend web developer. I can provide clean code and pixel perfect design. <br>I also make website more & more interactive with web animations."
-    },
-    "homeThreeHero": {
-      "imgAuthor": "/images/section/hero-img.jpg",
-      "bgImgLink": "/images/background/hero-bg-1.jpg",
-      "title": "Hi, I am <span>Jhon Doe</span>",
-      "text": "I am a frontend web developer. I can provide clean code and pixel perfect design. <br>I also make website more & more interactive with web animations."
-    },
-    "homeFourHero": {
-      "imgAuthor": "/images/section/hero-img.jpg",
-      "bgImgLink": "/images/background/hero-bg-2.jpg",
-      "title": "Hi, I am <span>Jhon Doe</span>",
-      "text": "I am a frontend web developer. I can provide clean code and pixel perfect design. <br>I also make website more & more interactive with web animations."
     }
   },
   "aboutData": {
     "imgLink": "/images/section/about.jpg",
     "cvPdf": "/images/kyle-roberts-resume2024.pdf",
-    "title": "Hi There! I'm Kyle Roberts",
+    "title": "You made it to my website! Yay! I'm Kyle Roberts",
     "subtitle": "Web Developer",
-    "text": "Creating interactive experiences is something I've always been passionate about. Looking to work on exciting creative projects that can utilize both my programming and communication experience! I'm an interactive designer, developer and multi-tasker with 10+ years experience developing professional content using video, animation, programming and design. 10+ years experience working with clients through trainings, presentations, and technical support.",
+    "text": "Creating interactive experiences is something I've always been passionate about. Looking to work on exciting creative projects that can utilize both my programming and communication experience! I'm an interactive designer, developer and multi-tasker with 10+ years experience developing professional content using video, animation, programming and design. I also have over 10 years experience working directly with clients through trainings, presentations, and technical support.",
     "details": [
       {
         "title": "Email",
-        "info": "emailkyleroberts@gmail.com"
+        "info": "info@kyleroberts.com"
       },
       {
         "title": "Language",
@@ -51,6 +40,23 @@
       }
     ]
   },
+  "socialData": [
+    {
+      "icon": "square-x-twitter",
+      "title": "X",
+      "link": "https://x.com/kyle_roberts"
+    },
+    {
+      "icon": "linkedin",
+      "title": "LinkedIn",
+      "link": "https://www.linkedin.com/in/kyleroberts/"
+    },
+    {
+      "icon": "github",
+      "title": "Github",
+      "link": "https://github.com/krob79/"
+    }
+  ],
   "serviceData": {
     "services": [
       {
@@ -387,36 +393,5 @@
     "title": "Contact Info",
     "subTitle": "Visit my social profile and get connected",
     "text": "Send me a message here or email directly at the address below."
-  },
-  "socialData": [
-    {
-      "icon": "square-x-twitter",
-      "title": "X",
-      "link": "https://x.com/kyle_roberts"
-    },
-    {
-      "icon": "linkedin",
-      "title": "LinkedIn",
-      "link": "https://www.linkedin.com/in/kyleroberts/"
-    },
-    {
-      "icon": "github",
-      "title": "Github",
-      "link": "https://github.com/krob79/"
-    }
-  ],
-  "socialData2": [
-    {
-      "icon": "twitter",
-      "link": "https://x.com/kyle_roberts"
-    },
-    {
-      "icon": "linkedin",
-      "link": "https://www.linkedin.com/in/kyleroberts/"
-    },
-    {
-      "icon": "github",
-      "link": "https://github.com/krob79/"
-    }
-  ]
+  }
 }

@@ -26,7 +26,7 @@ const ModalReview = ({ img, title, designation, text, modalClose }) => {
   }
 
   const modalBGStyle = {
-    backgroundColor: 'rgba(0,0,0,0.2)',
+    backgroundColor: 'rgba(0,0,0,0.8)',
     display: 'block',
   };
   const modalTitleStyle = {
@@ -67,9 +67,9 @@ const ModalReview = ({ img, title, designation, text, modalClose }) => {
   
 
   return (
-    <div className="modal show fade bd-example-modal-lg" style={modalBGStyle}>
-      <div className="modal-dialog animate__animated modal-lg">
-        <div className="modal-content" onClick={closeAnimation} style={modalContentStyle}>
+    <div className="modal show fade bd-example-modal-lg" onClick={closeAnimation} style={modalBGStyle}>
+      <div className="modal-dialog animate__animated modal-lg" >
+        <div className="modal-content" style={modalContentStyle}>
           <div className="modal-header" style={modalHeaderStyle}>
             <h4 className="modal-title" style={modalTitleStyle}>{``}</h4>
             <button

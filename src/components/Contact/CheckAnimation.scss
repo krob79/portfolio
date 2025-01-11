@@ -1,0 +1,29 @@
+
+
+circle {
+    transition: stroke-dashoffset 1s;
+    stroke-dashoffset: 88;
+    stroke: green;
+    stroke-width: 16;
+  }
+  
+  path {
+    transition: stroke-dashoffset 0.5s;
+    stroke-dashoffset: 24;
+    transition-delay: 0.5s;
+    stroke-width: 4;
+    stroke: white;
+  }
+
+.svgopen{
+    stroke-dashoffset: 0;
+}
+
+
+svg:hover circle {
+    stroke-dashoffset: 0;
+}
+
+svg:hover path {
+    stroke-dashoffset: 0;
+}
